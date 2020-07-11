@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm col-md w-100 col-xl header"> 
+                <img src="logo.png" alt="logo"> Stopwatch
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-sm col-md col-lg  digit">
+            <div class="ml" id="min">0</div>
+            <div>:</div>
+            <div id="sec">0</div>
+            <div>:</div>
+            <div id="msec">0</div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md col-lg  btn">
+                    <button id="start" type="button" onclick="start()" class="btn btn-outline-success">Start</button>
+                    <button id="pause" type="button" onclick="pause()" class="btn btn-outline-danger">Pause</button>
+                    <button id="reset" type="button" onclick="reset()" class="btn btn-outline-primary">Reset</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md col-lg  btnlap">
+                    <button  onclick="lap()" type="button" class="btn btn-info">Laps</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="laps">
+                    <ul id="laps">
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
