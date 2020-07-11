@@ -62,7 +62,7 @@ function lap(){
     var name = prompt("Your Name");
 
     var lapas = document.getElementById("laps");
-    lapas.innerHTML = name + "  " +min + "  :" + sec + "  :" + msec + "\n" ;
+    lapas.innerHTML = name + "  " +min + "  : " + sec + "  : " + msec + "\n" ;
     
     
 
